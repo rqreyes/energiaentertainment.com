@@ -1,0 +1,17 @@
+
+/*
+	AUTHOR: Osvaldas Valutis, www.osvaldas.info
+*/
+
+
+
+@import url( '_defaults.css' );
+
+
+
+.clearfix::after
+{
+	content: '';
+	display: table;
+	clear: both;
+}

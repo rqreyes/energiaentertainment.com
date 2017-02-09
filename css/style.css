@@ -1,0 +1,461 @@
+/* General
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+	background-color: #D3D3D3;
+}
+
+section {
+	height: initial;
+	padding: 4rem 0 2rem;
+	border-bottom: 0;
+}
+
+.invert {
+	background-color: #7F141F;
+	color: #FFF;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: #8DFF4F;
+}
+
+img, iframe {
+	border-color: #eee;
+	border: 0.625em solid rgba( 255, 255, 255, .5 );
+	transition: box-shadow .3s ease, border-color .3s ease;
+}
+
+figure {
+	margin: 0;
+}
+
+ul {
+	text-align: left;
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	width: initial;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+	font-family: Chandstate;
+	src: url("../fonts/Chandstate.otf");
+}
+
+@font-face {
+	font-family: Swiss;
+	src: url("../fonts/swz721e.ttf");
+}
+
+h2, .h4 {
+	font-family: "Poiret One", Helvetica;
+}
+
+header .ent, nav li a, .slogan {
+	font-family: Swiss, Arial;
+}
+
+.h4 {
+	font-size: 3rem;
+	margin-top: 0;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+p, label {
+	text-align: left;
+	margin-left: 0;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+/* Color
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+	Red: #BF1E2E
+	DK-Red: #7F141F
+	Green: #8DFF4F
+	DK-Green: #6ABF3B
+*/
+
+/* Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.fa {
+	color: #6ABF3B;
+}
+
+.fa-angle-down, .fa-angle-up {
+	margin: 0;
+	color: #8DFF4F;
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button {
+	line-height: normal;
+}
+
+.button, input[type="submit"].button {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #8DFF4F;
+	border: 1px solid #8DFF4F;
+}
+
+.button:hover,
+.button:focus,
+input[type="submit"].button:hover,
+input[type="submit"].button:focus {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #8DFF4F;
+	border: 1px solid #8DFF4F;
+}
+
+.slogan {
+	height: initial;
+	position: relative;
+	top: 480px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.6rem;
+	letter-spacing: 2px;
+}
+
+button {
+	padding: 0;
+}
+
+/* Header Background
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bg-header {
+	height: 55px;
+}
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-bottom: 1px solid #6ABF3B;
+}
+
+header .logo {
+	margin: 1px 0;
+	padding-left: 5%;
+	line-height: initial;
+	font-weight: normal;
+}
+
+header .energia, header .ent {
+	letter-spacing: 1px;
+}
+
+header .energia {
+	position: relative;
+	top: 1px;
+	font-family: Chandstate, Arial;
+	font-size: 3.1rem;
+	color: #BF1E2E;
+}
+
+header .ent {
+	position: relative;
+	top: -5px;
+	text-transform: uppercase;
+}
+
+/*Search
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#search {
+	margin: 13.5px 5% 13.5px 30px;
+}
+
+#search input[type="text"] {
+	height: initial;
+  background: url("../img/search-dark.png") no-repeat 10px 6px #F8F8F8;
+  border: 1px solid #d1d1d1;
+  font: bold 12px Arial, Helvetica, Sans-serif;
+  color: #222;
+  width: 50px;
+  padding: 6px 15px 6px 35px;
+
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+
+#search input[type="text"]:focus {
+  width: 100px;
+}
+
+#tipue_search_content {
+	max-width: initial;
+}
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav li {
+	margin-bottom: 0;
+}
+
+nav ul li:last-child {
+	padding-right: 40px;
+}
+
+.nav-collapse a {
+	background: inherit;
+	border-left: 0;
+}
+
+.nav-collapse a:active, .nav-collapse .active a {
+	background: #7F141F;
+}
+
+/* Home
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#home {
+	width: 100%;
+	height: 560px;
+	background: #000 url("../img/bg-mardi-gras.jpg") no-repeat bottom fixed;
+	text-align: center;
+	background-size: cover;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Testimonials
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#testimonials .row {
+	text-align: left;
+}
+
+#testimonials img {
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+#testimonials .h4 {
+	display: block;
+	margin: 0;
+}
+
+#testimonials .company {
+	margin-bottom: 10px;
+}
+
+/* Contact
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#contact .send-self {
+	margin-top: 8px;
+}
+
+#contact .fa {
+	font-size: 6rem;
+}
+
+#contact a:first-child .fa {
+	margin-left: 0;
+}
+
+#contact a .fa {
+	margin-left: 12px;
+}
+
+#contact a .fa:hover {
+	color: #8DFF4F;
+}
+
+#contact-feat {
+	margin: 30px 0 0 0;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+	padding: 4rem 0 2rem;
+}
+
+footer ul, footer ul ul, footer li {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+footer ul ul {
+	margin-left: 2rem;
+}
+
+/* Copyright
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#copyright {
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #FFF;
+}
+
+#copyright .row {
+	padding-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+#copyright p {
+	margin: 6px 0 0 0;
+}
+
+#copyright .button {
+	margin-bottom: 0;
+}
+
+/* Gallery
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#videos .h4, #videos .row {
+	margin: 0;
+}
+
+#photos .container {
+	width: 100%;
+}
+
+/* Artists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#directors .h4 {
+	margin: 0;
+}
+
+#directors .athena-pic-1 {
+	display: none;
+}
+
+#directors .athena-bio {
+	margin-left: 0;
+}
+
+#directors .athena-pic-2 {
+	display: inline-block;
+}
+
+#artists {
+	padding-top: 0;
+}
+
+#artists .container {
+	width: 100%;
+}
+
+#artists #container p {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 991px) {
+	#home {
+		background-attachment: scroll;
+	}
+
+@media (max-width: 549px) {
+	#home .slogan {
+		font-size: 11px;
+		padding: 0 20px;
+	}
+
+	#testimonials .row, #events .row, #contact .row {
+		text-align: center;
+	}
+
+	#testimonials .h4, #testimonials .company {
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	#testimonials img {
+		float: none;
+		margin: 0;
+	}
+
+	#events ul {
+		margin-bottom: 0;
+	}
+
+	#events .button {
+		margin-bottom: 2rem;
+	}
+
+	#contact #contact-feat {
+		display: none;
+	}
+
+	#contact .send-self {
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	#contact .fa
+ {
+		font-size: 4rem;
+		margin: 0;
+	}
+
+	#copyright p {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	#copyright .button {
+		width: 100%;
+	}
+
+	#videos .h4 {
+		font-size: 2rem;
+	}
+
+	#directors .athena-pic-1 {
+		display: block;
+	}
+
+	#directors .athena-pic-2 {
+		display: none;
+	}
+}
+
+/* Hide Search
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#search {
+	display: none;
+}
+
+.nav-collapse ul li:last-child {
+	margin-right: 50px;
+}
